@@ -13,6 +13,7 @@ http.createServer(function (req, res) {
               'Content-Type': 'image/png',
               'Content-Length': imageBuffer.length});
             res.end(imageBuffer);
+            ph.exit()
           });
         }, 2000);
       });
